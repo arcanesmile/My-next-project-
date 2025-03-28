@@ -1,14 +1,14 @@
 .navbar {
   background-color: #222;
-  padding: 15px;
+  padding: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   ul {
     display: flex;
-    gap: 80px;
+    gap: 90px;
     list-style: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
 
     li {
@@ -20,9 +20,20 @@
         transition: color 0.3s ease-in-out;
 
         &:hover {
-          color: #bbb; // Lighter color on hover
+          color: #bbb; 
         }
       }
     }
   }
+}
+
+
+.logo{
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+  
+.profileIcon{
+  padding: 3px;
 }

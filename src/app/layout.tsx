@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
-import "@/styles/globals.css"; // Import global styles
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "My Next.js 13 App",
-  description: "A simple Next.js 13 app with navigation",
+  title: "My Next.js App",
+  description: "",
 };
 
 export default function RootLayout({
