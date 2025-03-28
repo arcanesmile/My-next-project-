@@ -5,7 +5,7 @@ import styles from "../styles/navbar.module.scss";
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>BEM</div>
+      <div className={styles.logo}>BEM⚡</div>
       <ul>
         <li>
           <Link href="/">Home</Link>
