@@ -1,20 +1,30 @@
+'use client'; 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation"; 
 import styles from "../styles/navbar.module.scss";
 
 export default function Navbar() {
+  const pathname = usePathname(); 
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>BEM⚡</div>
       <ul>
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/" className={pathname === "/" ? styles.active : ""}>
+            Home
+          </Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link href="/about" className={pathname === "/about" ? styles.active : ""}>
+            About
+          </Link>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact" className={pathname === "/contact" ? styles.active : ""}>
+            Contact
+          </Link>
         </li>
       </ul>
       <div className={styles.profileIcon}>

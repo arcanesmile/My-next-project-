@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #222;
+  background-color: black;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -20,20 +20,24 @@
         transition: color 0.3s ease-in-out;
 
         &:hover {
-          color: #bbb; 
+          color: #bbb;
+        }
+
+        &.active {
+          padding-bottom: 2px;
+          border-bottom: 2px solid white;
         }
       }
     }
   }
 }
 
-
-.logo{
+.logo {
   color: white;
   font-weight: bold;
   padding: 10px;
 }
-  
-.profileIcon{
+
+.profileIcon {
   padding: 3px;
 }

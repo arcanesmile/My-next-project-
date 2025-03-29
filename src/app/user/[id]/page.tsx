@@ -1,10 +1,14 @@
 "use client";
 
+import { useParams } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
 import styles from "./profile.module.scss";
 
-export default function UserProfile({ params }: { params: { id: string } }) {
+export default function UserProfile() {
+  const params = useParams();
+  const userId = params.id; 
+
   const [isEditing, setIsEditing] = useState(false);
   const [userData, setUserData] = useState({
     name: "Bem Benjamin",
@@ -20,7 +24,7 @@ export default function UserProfile({ params }: { params: { id: string } }) {
   return (
     <div className={styles.profileContainer}>
       <div className={styles.profileCard}>
-        <h1 className={styles.profileTitle}>User Profile</h1>
+        <h1 className={styles.profileTitle}>User Profile - {userId}</h1>
 
         <div className={styles.profileContent}>
           <div className={styles.avatarContainer}>
