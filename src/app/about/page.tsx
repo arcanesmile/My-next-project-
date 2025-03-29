@@ -11,7 +11,6 @@ Bem dev hub delivers blazing-fast, pixel-perfect apps—merging sleek design wit
         </p>
       </section>
 
-      {/* Features Section */}
       <section className={styles.features}>
         <div className={styles["feature-card"]}>
           <h3>We'll Find You the Perfect idea</h3>
@@ -52,10 +51,10 @@ Bem dev hub delivers blazing-fast, pixel-perfect apps—merging sleek design wit
           <div className={styles["agent-card"]}>
             <img src="/agama.jpg" alt="agama" width="80" />
             <p>Donald Agama</p>
-            <p>full stack dev</p>
+            <p>Expetise_full stack dev</p>
           </div>
           <div className={styles["agent-card"]}>
-            <img src="agbo/.jpg" alt="Agbo" width="80" />
+            <img src="/agbo.jpg" alt="Agbo" width="80" />
             <p>Miracle Agbo</p>
             <p>Expertise_Designer</p>
           </div>
