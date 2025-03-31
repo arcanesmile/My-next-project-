@@ -1,0 +1,101 @@
+ .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #a9a9a9;
+    padding: 0.75rem 1rem;
+    position: relative;
+  }
+
+  .dropdown {
+    position: relative;
+
+    .menuButton {
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      color: black;
+      cursor: pointer;
+    }
+
+    .dropdownMenu {
+      position: absolute;
+      left: 0;
+      top: 2.5rem;
+      width: 500px;
+      background: black;
+      border-radius: 10px;
+      padding: 0.5rem 0;
+      list-style: none;
+
+      li {
+        padding: 0.5rem 1rem;
+        color: white;
+        cursor: pointer;
+        border-bottom: 2px;
+
+        &:hover {
+          background: grey;
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  
+
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .blogContent {
+    margin-top: 1.5rem;
+  }
+}
+ .searchWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .searchInput {
+      width: 0;
+      opacity: 0;
+      transition: width 0.3s ease, opacity 0.3s ease;
+      padding: 0.5rem;
+      background: rgba(18,18,18,0.6);
+      backdrop-filter: blur(15px);
+      border: none;
+      border-radius: 25px;
+      outline: none;
+      font-size: 1rem;
+      color: white;
+
+      &::placeholder {
+        color: grey;
+      }
+    }
+
+    .searchButton {
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+      margin-left: 8px;
+    }
+  }
+
+  .searchWrapper input {
+    width: 0;
+    opacity: 0;
+  }
+
+  .searchWrapper input:focus,
+  .searchWrapper input[placeholder] {
+    width: 180px;
+    opacity: 1;
+  }

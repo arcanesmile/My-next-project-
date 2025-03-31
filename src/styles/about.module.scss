@@ -1,5 +1,6 @@
 .about-container {
   text-align: center;
+  min-height: 100vh;
 
   .hero {
     background: linear-gradient(to top, rgba(0, 0, 0, 2), transparent), url('/about-img1.jpg');
